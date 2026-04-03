@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE_NAME=unitree/ros2:humble
+IMAGE_NAME=unitree/ros2:humble_arm64
 CONTAINER_NAME=ros2_humble
 SHARE_FOLDER_PATH=""
 SHARE_FOLDER_CMD=""
