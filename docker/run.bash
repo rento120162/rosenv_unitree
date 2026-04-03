@@ -79,5 +79,8 @@ docker run -it  $CONTAINER_NAME_CMD\
             $GPU_CMD \
             $REMOVE_CMD \
             $NETHOST_CMD \
+            --env ROS_DOMAIN_ID=0 \
+            -e RMW_IMPLEMENTATION=rmw_cyclonedds_cpp \
+            -e ROS_DISTRO=humble \
             --privileged \
             $IMAGE_NAME /bin/bash
