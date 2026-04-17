@@ -18,7 +18,7 @@ RUN apt update && apt install -y curl gnupg2 lsb-release tmux vim git wget libei
     
 ARG ros2_ver=humble
 ENV ROS_DISTRO=$ros2_ver
-RUN apt install -y ros-$ROS_DISTRO-desktop-full ros-$ROS_DISTRO-turtlesim \
+RUN apt install -y ros-$ROS_DISTRO-desktop-full ros-$ROS_DISTRO-turtlesim ros-$ROS_DISTRO-rmw-cyclonedds-cpp ros-$ROS_DISTRO-rosidl-generator-dds-idl libyaml-cpp-dev \
     python3-rosdep python3-argcomplete python3-colcon-common-extensions && \
     apt install -y python3-vcstool ros-$ROS_DISTRO-diagnostic-updater && \
     echo "ros installed" && \
