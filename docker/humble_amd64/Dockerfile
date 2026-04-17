@@ -41,7 +41,7 @@ ARG ros2_ver=humble
 ENV ROS_DISTRO=$ros2_ver
 
 #Indtall ROS2(Foxy etc..) and Install Tool for ROS2 and setup script の自動実行 and Install turtlesim and gazebo and Install ros2_example and turtulebot3_gazebo(waffle or burger)
-RUN apt install -y ros-$ROS_DISTRO-desktop-full ros-$ROS_DISTRO-turtlesim ros-$ROS_DISTRO-gazebo-ros-pkgs ros-$ROS_DISTRO-rqt-* \
+RUN apt install -y ros-$ROS_DISTRO-desktop-full ros-$ROS_DISTRO-turtlesim ros-$ROS_DISTRO-gazebo-ros-pkgs ros-$ROS_DISTRO-rqt-* ros-$ROS_DISTRO-rmw-cyclonedds-cpp ros-$ROS_DISTRO-rosidl-generator-dds-idl libyaml-cpp-dev \
 	python3-rosdep python3-argcomplete python3-colcon-common-extensions && \
 	apt install -y python3-vcstool && \
 	echo "ros installed" && \
