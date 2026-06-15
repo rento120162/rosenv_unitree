@@ -25,13 +25,13 @@ git clone https://github.com/rento120162/rosenv_unitree.git
 cat /etc/nv_tegra_release
 ```
 ```bash
-cd rosenv_for_unitree/docker
+cd rosenv_for_unitree/docker/humble_arm64
 docker build . -t unitree/ros2:humble_arm64
 ```
 ```bash
 cd
-chmod +x rosenv_for_unitree/docker/run.bash
-./rosenv_for_unitree/docker/run.bash
+chmod +x rosenv_for_unitree/docker/humble_arm64/run.bash
+./rosenv_for_unitree/docker/humble_arm64/run.bash
 ```
 
 ## 3. build necessary packages
