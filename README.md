@@ -20,6 +20,13 @@ At your local terminal
 sudo apt-get install git
 sudo snap install docker
 ```
+Install Python3
+```bash
+sudo apt update
+sudo apt install python3
+sudo apt install python3-pip
+sudo apt install python3-venv
+```
 check whether docker work correctly
 ```bash
 docker ps
