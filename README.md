@@ -16,7 +16,7 @@ Docker container include ROS2humble, and necesarry packages for control Unitree 
 # Setup
 ## 1.git colne 
 ```bash
-git clone https://github.com/KobeKosenRobotics/rosenv_for_unitree
+git clone https://github.com/rento120162/rosenv_unitree.git
 ```
 
 ## 2. make container
