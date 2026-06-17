@@ -17,6 +17,8 @@ Docker container include ROS2humble, and necesarry packages for control Unitree 
 ## How to use Docker
 At your local terminal 
 ```bash
+sudo apt update
+sudo apt install x11-xserver-utils
 sudo apt-get install git
 sudo snap install docker
 ```
