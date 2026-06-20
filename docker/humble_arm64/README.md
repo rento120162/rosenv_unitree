@@ -25,13 +25,13 @@ git clone https://github.com/rento120162/rosenv_unitree.git
 cat /etc/nv_tegra_release
 ```
 ```bash
-cd rosenv_for_unitree/docker/humble_arm64
+cd rosenv_unitree/docker/humble_arm64
 docker build . -t unitree/ros2:humble_arm64
 ```
 ```bash
 cd
-chmod +x rosenv_for_unitree/docker/humble_arm64/run.bash
-./rosenv_for_unitree/docker/humble_arm64/run.bash
+chmod +x rosenv_unitree/docker/humble_arm64/run.bash
+./rosenv_unitree/docker/humble_arm64/run.bash
 ```
 
 ## 3. build necessary packages
@@ -69,9 +69,6 @@ git clone https://github.com/unitreerobotics/unitree_ros2.git
 ```bash
 cd /home/colcon_ws
 sudo apt-get install python3-rosdep -y
-sudo apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp
-sudo apt install ros-$ROS_DISTRO-rosidl-generator-dds-idl
-sudo apt install libyaml-cpp-dev
 sudo rosdep init # "sudo rosdep init --include-eol-distros" for Foxy and earlier
 rosdep update # "sudo rosdep update --include-eol-distros" for Foxy and earlier
 rosdep install -i --from-path src --rosdistro $ROS_DISTRO --skip-keys=librealsense2 -y
