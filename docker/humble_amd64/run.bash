@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE_NAME=hrjp/ros2:humble_cuda
+IMAGE_NAME=mkren/ros2:humble_cuda
 CONTAINER_NAME=ros2_humble
 SHARE_FOLDER_PATH=""
 SHARE_FOLDER_CMD=""
