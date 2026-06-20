@@ -22,6 +22,6 @@ git clone https://github.com/rento120162/rosenv_unitree.git
 
 ## 2. make container
 ```bash
-chmod +x rosenv_for_unitree/docker/humble_amd64/run.bash
-./rosenv_for_unitree/docker/humble_amd64/run.bash -n humble
+chmod +x rosenv_unitree/docker/humble_amd64/run.bash
+./rosenv_unitree/docker/humble_amd64/run.bash -n humble
 ```
