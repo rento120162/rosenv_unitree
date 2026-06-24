@@ -25,3 +25,9 @@ git clone https://github.com/rento120162/rosenv_unitree.git
 chmod +x rosenv_unitree/docker/humble_amd64/run.bash
 ./rosenv_unitree/docker/humble_amd64/run.bash -n humble
 ```
+
+if docker container is not generated correctly, you should make image
+```bash
+cd rosenv_unitree/docker/humble_amd64
+docker build . -t mkren/ros2:humble_cuda
+```
