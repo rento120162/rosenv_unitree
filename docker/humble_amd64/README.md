@@ -29,5 +29,5 @@ chmod +x rosenv_unitree/docker/humble_amd64/run.bash
 if docker container is not generated correctly, you should make image
 ```bash
 cd rosenv_unitree/docker/humble_amd64
-docker build . -t mkren/ros2:humble_cuda
+docker build . -t rento120162/ros2:humble_amd64
 ```
